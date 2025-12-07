@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 60px;
+  background-color: #111;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  color: red;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  margin: 20px 0;
+  font-size: 22px;
+}
+
+.main-content {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.banner {
+  display: flex;
+  align-items: flex-end;
+  padding: 40px;
+
+  height: 400px;
+
+  background:
+    linear-gradient(to right, #000, transparent),
+    url('img/sam-away.jpg') center/cover no-repeat;
+}
+
+.banner-text {
+  max-width: 500px;
+}
+
+.banner-text h2 {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.info, .desc, .credits {
+  margin: 12px 0;
+  color: #ccc;
+}
+
+.watch-btn {
+  margin-top: 15px;
+  padding: 12px 25px;
+  background: transparent;
+  border: 1px solid red;
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.watch-btn:hover {
+  background: red;
+  color: #000;
+}
+
+/* MOVIES */
+.recent {
+  padding: 30px 40px;
+}
+
+.recent h3 {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.movies {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.movie-card {
+  width: 150px;
+  height: 220px;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.movie-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
